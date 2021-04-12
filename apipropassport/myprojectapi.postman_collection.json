@@ -1,0 +1,335 @@
+{
+	"id": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+	"name": "myprojectapi",
+	"description": "thanks to all",
+	"order": [
+		"3da750a8-3a1f-f321-2a0a-80bb4f7e0224",
+		"289cefb0-b8eb-befd-2383-6fcaf0a42704",
+		"6331fdb3-0c8a-4bc4-12bc-6f151cb57426",
+		"c7f01c79-05b3-dfd3-f8f8-cd3f16eb63fb",
+		"ce7b2b9c-f87c-4832-b339-76a3e04d888f",
+		"512db862-6881-b6f7-cce5-fd7b3a5884ed",
+		"fb7a2af8-38d9-1a98-fa40-0e96f7826098",
+		"82392c05-7dd7-7b4a-e19d-53b064431e3a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617931445132,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "289cefb0-b8eb-befd-2383-6fcaf0a42704",
+			"headers": "",
+			"headerData": [],
+			"url": " http://127.0.0.1:8000/api/go/5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "client_credentials",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "9rHRWu0cudz3HGLLdUvmcUlsabBVCqtc5RJrgFcc",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1618113751695,
+			"name": "http://localhost/laravel%20v7/public/api/getnamesbyid/3",
+			"description": "get data by id",
+			"collectionId": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+			"responses": []
+		},
+		{
+			"id": "3da750a8-3a1f-f321-2a0a-80bb4f7e0224",
+			"headers": "Authorization: Basic b21hckBnbWFpbC5jb206bXJuYWdhaDU3\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic b21hckBnbWFpbC5jb206bXJuYWdhaDU3",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": " http://127.0.0.1:8000/api/go",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1618114806000,
+			"name": "http://localhost/laravel%20v7/public/api/getnames",
+			"description": "get data from data base in json file",
+			"collectionId": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+			"responses": []
+		},
+		{
+			"id": "512db862-6881-b6f7-cce5-fd7b3a5884ed",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/oauth/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "client_credentials",
+					"description": ""
+				},
+				{
+					"key": "client_id",
+					"value": "3",
+					"description": ""
+				},
+				{
+					"key": "client_secret",
+					"value": "9rHRWu0cudz3HGLLdUvmcUlsabBVCqtc5RJrgFcc",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/oauth/token",
+			"description": "get access tokken byclint key in  passport",
+			"descriptionFormat": "html",
+			"time": 1618113198617,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6331fdb3-0c8a-4bc4-12bc-6f151cb57426",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/laravel%20v7/public/api/insertdata",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+			"data": [
+				{
+					"key": "name",
+					"value": "yasser",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost/laravel%20v7/public/api/insertdata",
+			"description": "to insert data in database by post \nand return it again to insure",
+			"descriptionFormat": "html",
+			"time": 1617933397306,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "82392c05-7dd7-7b4a-e19d-53b064431e3a",
+			"headers": "Authorization: Basic b21hckBnbWFpbC5jb206bXJuYWdhaDU3\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic b21hckBnbWFpbC5jb206bXJuYWdhaDU3",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/upload",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+			"data": [
+				{
+					"key": "photo",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "photo",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "photo",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/api/upload",
+			"description": "uplolad photos ",
+			"descriptionFormat": "html",
+			"time": 1618117165381,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "omar@gmail.com",
+				"password": "mrnagah57",
+				"saveToRequest": true
+			}
+		},
+		{
+			"id": "c7f01c79-05b3-dfd3-f8f8-cd3f16eb63fb",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/laravel%20v7/public/api/updatedata/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+			"data": [
+				{
+					"key": "name",
+					"value": "hooda",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "created_at",
+					"value": "8/4/2021",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost/laravel%20v7/public/api/updatedata/1",
+			"description": "update date with id by usin PUT",
+			"descriptionFormat": "html",
+			"time": 1617984896511,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ce7b2b9c-f87c-4832-b339-76a3e04d888f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/laravel%20v7/public/api/deletedata/9",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost/laravel%20v7/public/api/deletedata/9",
+			"description": "delete records with id by using DELETE",
+			"descriptionFormat": "html",
+			"time": 1617985743951,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		},
+		{
+			"id": "fb7a2af8-38d9-1a98-fa40-0e96f7826098",
+			"headers": "Authorization: Basic b21hckBnbWFpbC5jb206bXJuYWdhaDU3\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic b21hckBnbWFpbC5jb206bXJuYWdhaDU3",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/download",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "12dce83d-3a3c-f6f7-ded1-a7af51d0291a",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/api/download",
+			"description": "download file ",
+			"descriptionFormat": "html",
+			"time": 1618115663794,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
