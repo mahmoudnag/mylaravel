@@ -25,7 +25,7 @@
 
 
        <br><br>
-      <button class="btn btn-success">Buy Now</button>
+      <a href="ordernow" class="btn btn-success">Order Now</a>
       
     </div>
   </div>
